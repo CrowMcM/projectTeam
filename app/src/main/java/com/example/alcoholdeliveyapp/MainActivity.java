@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void validate(String userName, String userPassword){
         if((userName.equals("AlexP")) && (userPassword.equals("AlexH"))){
-            Intent intent = new Intent(MainActivity.this, Inventory.class);
+            Intent intent = new Intent(MainActivity.this, SecondActivity.class);
             startActivity(intent);
         }
         else{

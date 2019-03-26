@@ -30,7 +30,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
     }
 
     @Override
-    protected void onStart(){
+    protected void onStart() {
         super.onStart();
 
 
@@ -49,6 +49,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
 
 
                 break;
+
         }
     }
 }
