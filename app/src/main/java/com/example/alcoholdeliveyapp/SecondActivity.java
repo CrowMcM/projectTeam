@@ -9,7 +9,7 @@ import android.widget.EditText;
 
 public class SecondActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button btnLogout;
+    Button btnLogout, viewBeverageBtn;
     EditText etName, etAge, etUserName;
     CustomerLocalStore customerLocalStore;
 
@@ -22,9 +22,12 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         etAge = (EditText) findViewById(R.id.etAge);
         etUserName = (EditText) findViewById(R.id.etUserName);
         btnLogout = (Button) findViewById(R.id.btnLogout);
+        viewBeverageBtn = (Button) findViewById(R.id.viewBeveragesBtn);
+
 
 
         btnLogout.setOnClickListener(this);
+        viewBeverageBtn.setOnClickListener(this);
 
         customerLocalStore = new CustomerLocalStore(this);
     }
@@ -43,6 +46,19 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.btnLogout:
 
                 startActivity(new Intent(this, MainActivity.class));
+
+                customerLocalStore.clearCustomersData();
+                customerLocalStore.setLoggedInCustomer(false);
+
+
+                break;
+
+        }
+
+        switch (v.getId()) {
+            case R.id.viewBeveragesBtn:
+
+                startActivity(new Intent(this, Inventory.class));
 
                 customerLocalStore.clearCustomersData();
                 customerLocalStore.setLoggedInCustomer(false);
