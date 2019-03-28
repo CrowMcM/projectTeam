@@ -38,7 +38,10 @@ public class Inventory extends AppCompatActivity implements View.OnClickListener
         basic = (Button)findViewById(R.id.beerAdd);
         cart = (Button)findViewById(R.id.cartBtn);
 
+        cart.setOnClickListener(this);
+
     }
+
 
     @Override
     public void onClick(View v) {
