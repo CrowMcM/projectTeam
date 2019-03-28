@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "320328591300",
+    "firebase_url": "https://projectteam-33f85.firebaseio.com",
+    "project_id": "projectteam-33f85",
+    "storage_bucket": "projectteam-33f85.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:320328591300:android:dbcbfc32f7dac3c3",
+        "android_client_info": {
+          "package_name": "com.example.alcoholdeliveyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "320328591300-868jvnat030pqlogqfm5uqgot3vfa9e9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBVkop1-GRjKIyQXLG7r_S5HtYaviPoGU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
