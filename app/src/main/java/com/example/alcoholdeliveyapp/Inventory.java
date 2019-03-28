@@ -1,11 +1,12 @@
 package com.example.alcoholdeliveyapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Inventory extends AppCompatActivity {
+public class Inventory extends AppCompatActivity implements View.OnClickListener{
 
     private Button guin;
     private Button hein;
@@ -17,6 +18,8 @@ public class Inventory extends AppCompatActivity {
     private Button smirn;
     private Button smith;
     private Button basic;
+    private Button cart;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +36,20 @@ public class Inventory extends AppCompatActivity {
         smirn = (Button)findViewById(R.id.SmirnAdd);
         smith = (Button)findViewById(R.id.SmithAdd);
         basic = (Button)findViewById(R.id.beerAdd);
+        cart = (Button)findViewById(R.id.cartBtn);
 
+        cart.setOnClickListener(this);
+
+    }
+
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.cartBtn:
+
+                startActivity(new Intent(this, Cart.class));
+                break;
+        }
     }
 }
