@@ -50,19 +50,15 @@ public class Inventory extends AppCompatActivity implements View.OnClickListener
         smith.setOnClickListener(this);
         basic.setOnClickListener(this);
 
-
-
     }
 
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.cartBtn:
-
-                startActivity(new Intent(this, Cart.class));
-                break;
+        if(v == cart){
+            //open login activity when user taps on the already registered textview
+            startActivity(new Intent(this, Cart.class));
+        }
         }
     }
 
-}
