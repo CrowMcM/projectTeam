@@ -11,7 +11,6 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
 
     Button btnLogout, viewBeverageBtn;
     EditText etName, etAge, etUserName;
-    CustomerLocalStore customerLocalStore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +28,6 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         btnLogout.setOnClickListener(this);
         viewBeverageBtn.setOnClickListener(this);
 
-        customerLocalStore = new CustomerLocalStore(this);
     }
 
     @Override
@@ -47,9 +45,6 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
 
                 startActivity(new Intent(this, MainActivity.class));
 
-                customerLocalStore.clearCustomersData();
-                customerLocalStore.setLoggedInCustomer(false);
-
 
                 break;
 
@@ -60,8 +55,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
 
                 startActivity(new Intent(this, Inventory.class));
 
-                customerLocalStore.clearCustomersData();
-                customerLocalStore.setLoggedInCustomer(false);
+
 
 
                 break;

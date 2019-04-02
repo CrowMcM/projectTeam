@@ -39,6 +39,18 @@ public class Inventory extends AppCompatActivity implements View.OnClickListener
         cart = (Button)findViewById(R.id.cartBtn);
 
         cart.setOnClickListener(this);
+        guin.setOnClickListener(this);
+        hein.setOnClickListener(this);
+        bulm.setOnClickListener(this);
+        des.setOnClickListener(this);
+        fost.setOnClickListener(this);
+        tig.setOnClickListener(this);
+        cap.setOnClickListener(this);
+        smirn.setOnClickListener(this);
+        smith.setOnClickListener(this);
+        basic.setOnClickListener(this);
+
+
 
     }
 
@@ -52,4 +64,5 @@ public class Inventory extends AppCompatActivity implements View.OnClickListener
                 break;
         }
     }
+
 }
