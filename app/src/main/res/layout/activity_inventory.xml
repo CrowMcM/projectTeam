@@ -54,16 +54,31 @@
             tools:verticalScrollbarPosition="defaultPosition">
 
             <TextView
-                android:id="@+id/textView16"
+                android:id="@+id/textView17"
                 android:layout_width="176dp"
                 android:layout_height="44dp"
-                android:layout_marginTop="208dp"
+                android:layout_marginTop="192dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:textColor="@color/colorAccent"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toStartOf="@+id/guinAdd"
-                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView18"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="176dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="112dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Basic Wine"
+                android:textColor="@color/colorAccent"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toStartOf="@+id/guinAdd"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/imageView18"
                 app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
