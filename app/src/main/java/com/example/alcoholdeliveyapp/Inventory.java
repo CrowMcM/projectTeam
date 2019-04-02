@@ -26,17 +26,17 @@ public class Inventory extends AppCompatActivity implements View.OnClickListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inventory);
 
-        guin = (Button)findViewById(R.id.guinAdd);
-        hein = (Button)findViewById(R.id.heinAdd);
-        bulm = (Button)findViewById(R.id.bulmAdd);
-        des = (Button)findViewById(R.id.desperAdd);
-        fost = (Button)findViewById(R.id.fosterAdd);
-        tig = (Button)findViewById(R.id.tigerAdd);
-        cap = (Button)findViewById(R.id.morganAdd);
-        smirn = (Button)findViewById(R.id.SmirnAdd);
-        smith = (Button)findViewById(R.id.SmithAdd);
-        basic = (Button)findViewById(R.id.beerAdd);
-        cart = (Button)findViewById(R.id.cartBtn);
+        guin = findViewById(R.id.guinAdd);
+        hein = findViewById(R.id.heinAdd);
+        bulm = findViewById(R.id.bulmAdd);
+        des = findViewById(R.id.desperAdd);
+        fost = findViewById(R.id.fosterAdd);
+        tig = findViewById(R.id.tigerAdd);
+        cap = findViewById(R.id.morganAdd);
+        smirn = findViewById(R.id.SmirnAdd);
+        smith = findViewById(R.id.SmithAdd);
+        basic = findViewById(R.id.beerAdd);
+        cart = findViewById(R.id.cartBtn);
 
         cart.setOnClickListener(this);
         guin.setOnClickListener(this);
@@ -55,10 +55,8 @@ public class Inventory extends AppCompatActivity implements View.OnClickListener
 
     @Override
     public void onClick(View v) {
-        if(v == cart){
-            //open login activity when user taps on the already registered textview
-            startActivity(new Intent(this, Cart.class));
-        }
+        //open login activity when user taps on the already registered Button
+        if(v == cart) startActivity(new Intent(this, Cart.class));
         }
     }
 
