@@ -10,15 +10,15 @@ public class Inventory extends AppCompatActivity implements View.OnClickListener
 
     private Button guin;
     private Button hein;
-    private Button bulm;
     private Button des;
     private Button fost;
-    private Button tig;
     private Button cap;
     private Button smirn;
-    private Button smith;
     private Button basic;
+    private Button wine;
+    private Button whisk;
     private Button cart;
+
 
 
     @Override
@@ -28,26 +28,24 @@ public class Inventory extends AppCompatActivity implements View.OnClickListener
 
         guin = findViewById(R.id.guinAdd);
         hein = findViewById(R.id.heinAdd);
-        bulm = findViewById(R.id.bulmAdd);
-        des = findViewById(R.id.desperAdd);
-        fost = findViewById(R.id.fosterAdd);
-        tig = findViewById(R.id.tigerAdd);
+        des = findViewById(R.id.desAdd);
+        fost = findViewById(R.id.fostAdd);
         cap = findViewById(R.id.morganAdd);
         smirn = findViewById(R.id.SmirnAdd);
-        smith = findViewById(R.id.SmithAdd);
-        basic = findViewById(R.id.beerAdd);
+        basic = findViewById(R.id.basicAdd);
+        wine = findViewById(R.id.wineAdd);
+        whisk = findViewById(R.id.whiskeyAdd);
         cart = findViewById(R.id.cartBtn);
 
         cart.setOnClickListener(this);
         guin.setOnClickListener(this);
         hein.setOnClickListener(this);
-        bulm.setOnClickListener(this);
         des.setOnClickListener(this);
         fost.setOnClickListener(this);
-        tig.setOnClickListener(this);
         cap.setOnClickListener(this);
         smirn.setOnClickListener(this);
-        smith.setOnClickListener(this);
+        wine.setOnClickListener(this);
+        whisk.setOnClickListener(this);
         basic.setOnClickListener(this);
 
     }

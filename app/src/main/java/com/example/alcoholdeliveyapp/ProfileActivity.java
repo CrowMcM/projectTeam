@@ -19,6 +19,9 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
     private TextView textViewUserEmail;
     private Button buttonLogout;
     private Button beverageButton;
+    private Button beverageButton1;
+    private Button beverageButton2;
+    private Button beverageButton3;
 
 
 
@@ -46,6 +49,10 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         textViewUserEmail = (TextView) findViewById(R.id.textViewUserEmail);
         buttonLogout = (Button) findViewById(R.id.buttonLogout);
         beverageButton = (Button) findViewById(R.id.beverageBTN);
+        beverageButton1 = (Button) findViewById(R.id.beverageBTN1);
+        beverageButton2 = (Button) findViewById(R.id.beverageBTN2);
+        beverageButton3 = (Button) findViewById(R.id.beverageBTN3);
+
 
         //displaying logged in user name
         textViewUserEmail.setText("Welcome "+user.getEmail());
@@ -53,6 +60,27 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         //adding listener to button
         buttonLogout.setOnClickListener(this);
         beverageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ProfileActivity.this, Inventory.class));
+            }
+        });
+
+        beverageButton1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ProfileActivity.this, Inventory.class));
+            }
+        });
+
+        beverageButton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ProfileActivity.this, Inventory.class));
+            }
+        });
+
+        beverageButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(ProfileActivity.this, Inventory.class));

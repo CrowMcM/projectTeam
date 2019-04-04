@@ -8,6 +8,76 @@
     android:background="@drawable/gradient">
 
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/beverageBTN"
+                android:layout_width="235dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="88dp"
+                android:layout_marginLeft="88dp"
+                android:layout_marginTop="160dp"
+                android:background="@drawable/mybutton"
+                android:text="BEVERAGES"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/beverageBTN3" />
+
+            <Button
+                android:id="@+id/beverageBTN1"
+                android:layout_width="235dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="88dp"
+                android:layout_marginLeft="88dp"
+                android:layout_marginTop="160dp"
+                android:background="@drawable/mybutton"
+                android:text="BEVERAGES"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/beverageBTN" />
+
+            <Button
+                android:id="@+id/beverageBTN2"
+                android:layout_width="235dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="88dp"
+                android:layout_marginLeft="88dp"
+                android:layout_marginTop="168dp"
+                android:background="@drawable/mybutton"
+                android:text="BEVERAGES"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/beverageBTN3"
+                android:layout_width="235dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="88dp"
+                android:layout_marginLeft="88dp"
+                android:layout_marginTop="164dp"
+                android:background="@drawable/mybutton"
+                android:text="BEVERAGES"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/beverageBTN2" />
+
+            <Button
+                android:id="@+id/buttonLogout"
+                android:layout_width="123dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="144dp"
+                android:layout_marginLeft="144dp"
+                android:layout_marginTop="1084dp"
+                android:background="@drawable/mybutton"
+                android:text="Logout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
     <TextView
         android:id="@+id/textViewUserEmail"
         android:layout_width="wrap_content"
@@ -19,30 +89,5 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/buttonLogout"
-        android:layout_width="123dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="68dp"
-        android:layout_marginBottom="8dp"
-        android:text="Logout"
-        app:layout_constraintBottom_toTopOf="@+id/beverageBTN"
-        app:layout_constraintEnd_toEndOf="@+id/textViewUserEmail"
-        app:layout_constraintStart_toStartOf="@+id/textViewUserEmail"
-        app:layout_constraintTop_toBottomOf="@+id/textViewUserEmail"
-        app:layout_constraintVertical_bias="0.0"
-        android:background="@drawable/mybutton"/>
-
-    <Button
-        android:id="@+id/beverageBTN"
-        android:layout_width="123dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="216dp"
-        android:text="BEVERAGES"
-        app:layout_constraintEnd_toEndOf="@+id/textViewUserEmail"
-        app:layout_constraintStart_toStartOf="@+id/textViewUserEmail"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/mybutton"/>
 
 </android.support.constraint.ConstraintLayout>
