@@ -20,7 +20,6 @@ public class Inventory extends AppCompatActivity implements View.OnClickListener
     private Button cart;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

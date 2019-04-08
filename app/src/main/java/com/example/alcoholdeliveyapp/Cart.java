@@ -22,7 +22,7 @@ public class Cart extends AppCompatActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cart);
 
-        payBtn.setOnClickListener(this);
+
 
     }
 
