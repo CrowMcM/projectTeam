@@ -53,7 +53,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         switch (v.getId()) {
             case R.id.viewBeveragesBtn:
 
-                startActivity(new Intent(this, Inventory.class));
+                startActivity(new Intent(this, ProfileActivity.class));
 
 
 

@@ -23,7 +23,9 @@ public class Cart extends AppCompatActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cart);
 
+        payBtn = findViewById(R.id.payBtn);
 
+        payBtn.setOnClickListener(this);
 
     }
 
