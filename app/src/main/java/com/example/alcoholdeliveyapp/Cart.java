@@ -16,6 +16,7 @@ public class Cart extends AppCompatActivity implements View.OnClickListener {
     private TextView cnTxt;
     private TextView cvcTxt;
     private TextView dateTxt;
+    private TextView etTotal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
