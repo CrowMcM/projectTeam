@@ -42,8 +42,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:text="LOGIN"
-            android:background="@drawable/mybutton"/>
+            android:background="@drawable/mybutton"
+            android:text="LOGIN" />
 
         <TextView
             android:id="@+id/textViewSignUp"
@@ -68,8 +68,8 @@
             android:layout_marginEnd="87dp"
             android:layout_marginRight="87dp"
             android:layout_marginBottom="93dp"
-            android:text="Forgot Password"
-            android:background="@drawable/mybutton"/>
+            android:background="@drawable/mybutton"
+            android:text="Forgot Password" />
 
 
     </LinearLayout>

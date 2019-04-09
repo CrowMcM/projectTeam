@@ -17,9 +17,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-        etName = (EditText) findViewById(R.id.etName);
-        etAge = (EditText) findViewById(R.id.etAge);
-        etUserName = (EditText) findViewById(R.id.etUserName);
+
         btnLogout = (Button) findViewById(R.id.btnLogout);
         viewBeverageBtn = (Button) findViewById(R.id.viewBeveragesBtn);
 
