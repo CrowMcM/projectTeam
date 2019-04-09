@@ -20,7 +20,6 @@ public class Inventory extends AppCompatActivity implements View.OnClickListener
     private Button cart;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,7 +53,11 @@ public class Inventory extends AppCompatActivity implements View.OnClickListener
     @Override
     public void onClick(View v) {
         //open login activity when user taps on the already registered Button
-        if (v == cart) startActivity(new Intent(this, Cart.class));
+        cart.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(Inventory.this, Cart.class));
+            }
+        });
     }
     }
 
