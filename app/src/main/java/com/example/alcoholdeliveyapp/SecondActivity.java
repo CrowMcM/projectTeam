@@ -1,5 +1,9 @@
 package com.example.alcoholdeliveyapp;
 
+/*    Completed by Nathan Hodgkiss
+      Student Number: x17381176
+*/
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

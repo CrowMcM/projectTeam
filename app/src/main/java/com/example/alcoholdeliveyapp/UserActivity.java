@@ -1,6 +1,5 @@
 package com.example.alcoholdeliveyapp;
 
-
 //    Based of tutorial from here:
 //    https://android.jlelse.eu/build-a-phonebook-with-cloud-firestore-in-10-minutes-59c65e7af4ad
 
