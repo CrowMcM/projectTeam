@@ -54,9 +54,6 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         beverageButton3 = (Button) findViewById(R.id.beverageBTN3);
 
 
-        //displaying logged in user name
-        textViewUserEmail.setText("Welcome "+user.getEmail());
-
         //adding listener to button
         buttonLogout.setOnClickListener(this);
         beverageButton.setOnClickListener(new View.OnClickListener() {

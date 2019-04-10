@@ -6,12 +6,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class SecondActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button btnLogout, viewBeverageBtn, buttonUser;
+    private TextView textViewUserEmail;
     EditText etName, etAge, etUserName;
 
 
@@ -36,12 +39,18 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         }
 
 
+        //getting current user
+        FirebaseUser user = firebaseAuth.getCurrentUser();
 
+
+        //Initialising views
+        textViewUserEmail = (TextView) findViewById(R.id.textViewUserEmail);
         btnLogout = (Button) findViewById(R.id.btnLogout);
         viewBeverageBtn = (Button) findViewById(R.id.viewBeveragesBtn);
         buttonUser = (Button) findViewById(R.id.buttonUser);
 
-
+        //Displays currently logged in user
+        textViewUserEmail.setText("Welcome "+user.getEmail());
 
         btnLogout.setOnClickListener(this);
         viewBeverageBtn.setOnClickListener(this);
@@ -57,17 +66,19 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
     }
 
 
+
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.btnLogout:
+            //if logout is pressed
+            if(v == btnLogout){
+                //logging out the user
+                firebaseAuth.signOut();
+                //closing activity
+                finish();
+                //starting login activity
+                startActivity(new Intent(this, LoginActivity.class));
+            }
 
-                startActivity(new Intent(this, MainActivity.class));
-
-
-                break;
-
-        }
 
         switch (v.getId()) {
             case R.id.buttonUser:
