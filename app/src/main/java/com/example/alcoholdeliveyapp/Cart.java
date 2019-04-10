@@ -1,17 +1,15 @@
 package com.example.alcoholdeliveyapp;
 
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.TextUtils;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class Cart extends AppCompatActivity implements View.OnClickListener {
 
+    //Defining view objects
     private Button payBtn;
     private TextView cnTxt;
     private TextView cvcTxt;
@@ -35,7 +33,7 @@ public class Cart extends AppCompatActivity implements View.OnClickListener {
         switch (v.getId()) {
             case R.id.payBtn:
 
-                Toast.makeText(this,"Accepted. Your order is on th way.",Toast.LENGTH_LONG).show();
+                Toast.makeText(this,"Accepted. Your order is on the way.",Toast.LENGTH_LONG).show();
                 return;
         }
     }

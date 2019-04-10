@@ -40,10 +40,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //defining firebaseauth object
     private FirebaseAuth firebaseAuth;
 
+
+    //Everything within onCreate executes when app is launched
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Splash Screen
+        //setTheme(R.style.AppTheme);
 
         //initializing firebase auth object
         firebaseAuth = FirebaseAuth.getInstance();
@@ -73,6 +78,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         textViewSignin.setOnClickListener(this);
     }
 
+    //Method for registering user.
     private void registerUser(){
 
         //getting email and password from edit texts

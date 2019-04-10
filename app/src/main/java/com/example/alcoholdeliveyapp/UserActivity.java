@@ -54,6 +54,7 @@ public class UserActivity extends AppCompatActivity {
         save    = findViewById(R.id.save);
         buttonGet = findViewById(R.id.buttonGet);
 
+        //Fetches saved information when buttonGet is pressed
         buttonGet.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
@@ -61,6 +62,7 @@ public class UserActivity extends AppCompatActivity {
             }
         });
 
+        //Method for adding contact initiated when Save button is pressed
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
