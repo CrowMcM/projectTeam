@@ -1,5 +1,11 @@
 package com.example.alcoholdeliveyapp;
 
+//Based of tutorial from here:
+// https://www.youtube.com/watch?v=t8vUdt1eEzE
+
+/*    Completed by Nathan Hodgkiss
+      Student Number: x17381176
+*/
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -29,6 +35,8 @@ public class ForgotPasswordActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgot_password);
 
+
+        //Initiating views
         toolbar = findViewById(R.id.toolbar);
         progressBar = findViewById(R.id.progressBar);
         userEmail = findViewById(R.id.etUserEmail);
@@ -36,6 +44,8 @@ public class ForgotPasswordActivity extends AppCompatActivity {
 
         toolbar.setTitle("Forgot password");
 
+
+        //Initializing firebase auth object
         firebaseAuth = firebaseAuth.getInstance();
 
         userPass.setOnClickListener(new View.OnClickListener() {

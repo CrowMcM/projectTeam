@@ -1,5 +1,11 @@
 package com.example.alcoholdeliveyapp;
 
+//Based of tutorial from here:
+//https://www.simplifiedcoding.net/firebase-user-authentication-tutorial/
+
+/*    Completed by Nathan Hodgkiss
+      Student Number: x17381176
+*/
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -17,6 +23,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -116,6 +123,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View view) {
+        //Sign-in button initiates login method
         if(view == buttonSignIn){
             userLogin();
         }

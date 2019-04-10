@@ -7,7 +7,15 @@
     android:background="@drawable/gradient"
 
 
+
+
     tools:context="com.example.alcoholdeliveyapp.MainActivity">
+
+    <!--
+    Design Layout From Here:
+    https://www.youtube.com/watch?v=GAdGmJxfcf8&t=307s
+    -->
+
 
     <LinearLayout
         android:layout_centerVertical="true"

@@ -7,6 +7,11 @@
     android:background="@drawable/gradient"
     tools:context=".SecondActivity">
 
+    <!--
+    Design Layout From Here:
+    https://www.youtube.com/watch?v=GAdGmJxfcf8&t=307s
+    -->
+
     <Button
         android:id="@+id/viewBeveragesBtn"
         android:layout_width="229dp"

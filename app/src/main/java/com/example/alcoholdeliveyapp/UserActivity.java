@@ -1,5 +1,13 @@
 package com.example.alcoholdeliveyapp;
 
+
+//    Based of tutorial from here:
+//    https://android.jlelse.eu/build-a-phonebook-with-cloud-firestore-in-10-minutes-59c65e7af4ad
+
+/*    Completed by Nathan Hodgkiss
+      Student Number: x17381176
+*/
+
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -24,6 +32,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class UserActivity extends AppCompatActivity {
+    //Defines the keys from the Cloud Firestore.
 
     private static final String NAME_KEY = "Name";
     private static final String EMAIL_KEY = "Email";
@@ -39,6 +48,8 @@ public class UserActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
         db = FirebaseFirestore.getInstance();
+
+        //Initiating views
         textDisplay = findViewById(R.id.textDisplay);
         message = findViewById(R.id.displayMessage);
         save    = findViewById(R.id.save);
@@ -62,6 +73,7 @@ public class UserActivity extends AppCompatActivity {
 
     }
 
+    //Keeps updates from the Firebase
     private void addRealtimeUpdate() {
         DocumentReference contactListener = db.collection("PhoneBook").document("Contacts");
         contactListener.addSnapshotListener(new EventListener<DocumentSnapshot>() {
@@ -105,6 +117,8 @@ public class UserActivity extends AppCompatActivity {
                 });
 
     }
+
+    //Method that reads the details from the Firebase
     private void ReadSingleContact() {
 
         DocumentReference user = db.collection("PhoneBook").document("Contacts");
@@ -130,6 +144,8 @@ public class UserActivity extends AppCompatActivity {
                 });
 
     }
+
+    //Method that takes input from editTexts and saves it to the Firebase
     private void addNewContact(){
         save    = findViewById(R.id.save);
         name    = findViewById(R.id.name);

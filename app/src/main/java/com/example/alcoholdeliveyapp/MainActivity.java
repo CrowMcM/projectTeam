@@ -1,5 +1,12 @@
 package com.example.alcoholdeliveyapp;
 
+//Based of tutorial from here:
+//https://www.simplifiedcoding.net/android-firebase-tutorial-1/
+
+/*    Completed by Nathan Hodgkiss
+      Student Number: x17381176
+*/
+
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -112,7 +119,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-
+        //Signup button starts registerUser method
         if(view == buttonSignup){
             registerUser();
         }
