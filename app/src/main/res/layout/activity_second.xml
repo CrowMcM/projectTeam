@@ -9,25 +9,24 @@
 
     <Button
         android:id="@+id/viewBeveragesBtn"
-        android:layout_width="248dp"
-        android:layout_height="59dp"
+        android:layout_width="229dp"
+        android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="76dp"
+        android:layout_marginBottom="44dp"
         android:background="@drawable/mybutton"
         android:text="View Beverages"
         android:textColor="#ffff"
         app:layout_constraintBottom_toTopOf="@+id/btnLogout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnLogout"
-        android:layout_width="248dp"
-        android:layout_height="61dp"
+        android:layout_width="229dp"
+        android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
@@ -111,17 +110,16 @@
 
     <Button
         android:id="@+id/buttonUser"
-        android:layout_width="248dp"
-        android:layout_height="59dp"
+        android:layout_width="229dp"
+        android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="44dp"
         android:background="@drawable/mybutton"
         android:text="USER DETAILS"
         app:layout_constraintBottom_toTopOf="@+id/viewBeveragesBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>
