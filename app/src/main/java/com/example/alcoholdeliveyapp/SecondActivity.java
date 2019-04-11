@@ -56,6 +56,9 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         viewBeverageBtn = (Button) findViewById(R.id.viewBeveragesBtn);
         buttonUser = (Button) findViewById(R.id.buttonUser);
         ImageView imgF = (ImageView)findViewById(R.id.imageViewFacebook);
+        ImageView imgT = (ImageView)findViewById(R.id.imageView11);
+        ImageView imgI = (ImageView)findViewById(R.id.imageView12);
+
 
         //Displays currently logged in user
         textViewUserEmail.setText("Welcome "+user.getEmail());
