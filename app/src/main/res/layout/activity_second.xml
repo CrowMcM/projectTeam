@@ -59,7 +59,7 @@
         app:srcCompat="@drawable/drink2" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/imageViewFacebook"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="8dp"

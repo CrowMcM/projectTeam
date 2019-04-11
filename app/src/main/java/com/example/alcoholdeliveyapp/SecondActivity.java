@@ -5,11 +5,13 @@ package com.example.alcoholdeliveyapp;
 */
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -20,6 +22,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
     Button btnLogout, viewBeverageBtn, buttonUser;
     private TextView textViewUserEmail;
     EditText etName, etAge, etUserName;
+
 
 
     //firebase auth object
@@ -52,6 +55,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         btnLogout = (Button) findViewById(R.id.btnLogout);
         viewBeverageBtn = (Button) findViewById(R.id.viewBeveragesBtn);
         buttonUser = (Button) findViewById(R.id.buttonUser);
+        ImageView imgF = (ImageView)findViewById(R.id.imageViewFacebook);
 
         //Displays currently logged in user
         textViewUserEmail.setText("Welcome "+user.getEmail());
@@ -59,6 +63,18 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         btnLogout.setOnClickListener(this);
         viewBeverageBtn.setOnClickListener(this);
         buttonUser.setOnClickListener(this);
+
+
+        //Facebook t
+        imgF.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("http://facebook.com"));
+                startActivity(intent);
+            }
+        });
 
     }
 
