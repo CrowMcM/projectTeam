@@ -9,15 +9,15 @@
     android:background="@drawable/gradient"
     tools:context="com.example.alcoholdeliveyapp.MainActivity">
 
-    <!--
-    Design Resources From Here:
-    https://www.youtube.com/watch?v=GAdGmJxfcf8&t=307s
+    <!--Completed by Nathan Hodgkiss
+    Student Number: x17381176
     -->
 
     <!--
     Based of tutorial from here:
     https://android.jlelse.eu/build-a-phonebook-with-cloud-firestore-in-10-minutes-59c65e7af4ad
     -->
+
     <TextView
         android:id="@+id/textDisplay"
         android:layout_width="wrap_content"

@@ -56,6 +56,8 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         viewBeverageBtn = (Button) findViewById(R.id.viewBeveragesBtn);
         buttonUser = (Button) findViewById(R.id.buttonUser);
         ImageView imgF = (ImageView)findViewById(R.id.imageViewFacebook);
+        ImageView imgT = (ImageView)findViewById(R.id.imageView11);
+        ImageView imgI = (ImageView)findViewById(R.id.imageView12);
 
         //Displays currently logged in user
         textViewUserEmail.setText("Welcome "+user.getEmail());
@@ -65,7 +67,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         buttonUser.setOnClickListener(this);
 
 
-        //Facebook t
+        //Facebook launching on icon tap
         imgF.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent intent = new Intent();
@@ -76,6 +78,28 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
             }
         });
 
+        //Twitter launching on icon tap
+        imgT.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("http://twitter.com"));
+                startActivity(intent);
+            }
+        });
+
+        //Instagram launching on icon tap
+        imgI.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("https://www.instagram.com/?hl=en"));
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
