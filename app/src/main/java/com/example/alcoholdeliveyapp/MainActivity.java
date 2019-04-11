@@ -1,10 +1,11 @@
 package com.example.alcoholdeliveyapp;
 
-//Based of tutorial from here:
-//https://www.simplifiedcoding.net/android-firebase-tutorial-1/
+/*
+    Based of tutorial from here:
+    https://www.simplifiedcoding.net/android-firebase-tutorial-1/
 
-/*    Completed by Nathan Hodgkiss
-      Student Number: x17381176
+    Completed by Nathan Hodgkiss
+    Student Number: x17381176
 */
 
 import android.app.ProgressDialog;

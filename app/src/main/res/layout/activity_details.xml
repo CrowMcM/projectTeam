@@ -27,13 +27,13 @@
         android:text="User Details"
         android:textColor="#FFFFFF"
         android:textSize="25sp" />
+
     <EditText
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#FFFFFF"
         android:hint="Name"
-        />
+        android:textColor="#FFFFFF" />
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"

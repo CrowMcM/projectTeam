@@ -85,9 +85,11 @@
                 android:layout_marginStart="64dp"
                 android:layout_marginLeft="64dp"
                 android:layout_marginBottom="8dp"
+                android:layout_gravity="center_horizontal"
                 app:layout_constraintBottom_toTopOf="@+id/beverageBTN2"
                 app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/offlicence" />
+                app:srcCompat="@drawable/offlicence"
+                />
 
             <ImageView
                 android:id="@+id/offli2"
