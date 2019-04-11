@@ -78,51 +78,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/offlic1"
-                android:layout_width="wrap_content"
-                android:layout_height="200dp"
-                android:layout_marginStart="64dp"
-                android:layout_marginLeft="64dp"
-                android:layout_marginBottom="8dp"
-                android:layout_gravity="center_horizontal"
-                app:layout_constraintBottom_toTopOf="@+id/beverageBTN2"
-                app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/offlicence"
-                />
-
-            <ImageView
-                android:id="@+id/offli2"
-                android:layout_width="235dp"
-                android:layout_height="183dp"
-                android:layout_marginStart="64dp"
-                android:layout_marginLeft="64dp"
-                android:layout_marginTop="8dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/beverageBTN2"
-                app:srcCompat="@drawable/licence" />
-
-            <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="232dp"
-                android:layout_height="139dp"
-                android:layout_marginStart="68dp"
-                android:layout_marginLeft="68dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/beverageBTN3"
-                app:srcCompat="@drawable/ol" />
-
-            <ImageView
-                android:id="@+id/imageView13"
-                android:layout_width="271dp"
-                android:layout_height="173dp"
-                android:layout_marginStart="52dp"
-                android:layout_marginLeft="52dp"
-                android:layout_marginTop="8dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/beverageBTN"
-                app:srcCompat="@drawable/off" />
-
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
 
