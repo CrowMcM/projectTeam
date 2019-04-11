@@ -10,7 +10,9 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="78dp">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -75,19 +77,51 @@
                 android:text="Logout"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/offlic1"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_marginStart="64dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/beverageBTN2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/offlicence" />
+
+            <ImageView
+                android:id="@+id/offli2"
+                android:layout_width="235dp"
+                android:layout_height="183dp"
+                android:layout_marginStart="64dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/beverageBTN2"
+                app:srcCompat="@drawable/licence" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="232dp"
+                android:layout_height="139dp"
+                android:layout_marginStart="68dp"
+                android:layout_marginLeft="68dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/beverageBTN3"
+                app:srcCompat="@drawable/ol" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="271dp"
+                android:layout_height="173dp"
+                android:layout_marginStart="52dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/beverageBTN"
+                app:srcCompat="@drawable/off" />
+
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
-
-    <TextView
-        android:id="@+id/textViewUserEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Large Text"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

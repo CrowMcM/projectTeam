@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context="com.example.alcoholdeliveyapp.MainActivity">
+
+    <!--
+    Design Resources From Here:
+    https://www.youtube.com/watch?v=GAdGmJxfcf8&t=307s
+    -->
+
+    <!--
+    Based of tutorial from here:
+    https://android.jlelse.eu/build-a-phonebook-with-cloud-firestore-in-10-minutes-59c65e7af4ad
+    -->
+    <TextView
+        android:id="@+id/textDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:text="User Details"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:hint="Name"
+        />
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:hint="Email"/>
+    <EditText
+        android:id="@+id/phone"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone"/>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Save"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/mybutton"/>
+
+    <TextView
+        android:id="@+id/displayMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Current Details Appear Here On Request!"
+        android:textAlignment="center"
+        android:textColor="#FFFF"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/buttonGet"
+        android:layout_marginTop="100dp"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/mybutton"
+        android:text="CURRENT DETAILS" />
+
+</LinearLayout>
