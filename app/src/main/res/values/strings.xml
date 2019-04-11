@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AlcoholDeliveyApp</string>
+    <string name="guiness">Guiness 5 euro</string>
+    <string name="guin">Guiness €5</string>
 </resources>
