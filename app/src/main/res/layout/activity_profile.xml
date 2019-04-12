@@ -119,12 +119,14 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginStart="65dp"
                 android:layout_marginLeft="65dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="65dp"
                 android:layout_marginRight="65dp"
                 android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toTopOf="@+id/beverageBTN2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/logoVendor"
                 app:srcCompat="@drawable/storefront" />
 
             <ImageView
