@@ -1,11 +1,13 @@
 package com.example.alcoholdeliveyapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
 
 public class Cart extends AppCompatActivity implements View.OnClickListener {
 
@@ -28,13 +30,15 @@ public class Cart extends AppCompatActivity implements View.OnClickListener {
 
         displayTv = (TextView) findViewById(R.id.displayTv);
 
-        String g = getIntent().getStringExtra("GUIN_ID");
-        displayTv.append(g);
 
-        String h = getIntent().getStringExtra("HEN_ID");
-        displayTv.append(h);
+        Intent intent = getIntent();
+        String guinTv = intent.getExtras().getString("GuinN");
 
-        String d = getIntent().getStringExtra("DES_ID");
+
+    /*      int heinekin = getIntent().getIntExtra("HEN_ID", 0);
+        displayTv.setText(heinekin);
+
+      String d = getIntent().getStringExtra("DES_ID");
         displayTv.append(d);
 
         String f = getIntent().getStringExtra("FOS_ID");
@@ -54,7 +58,7 @@ public class Cart extends AppCompatActivity implements View.OnClickListener {
 
         String b = getIntent().getStringExtra("BAS_ID");
         displayTv.append(b);
-
+*/
     }
 
 

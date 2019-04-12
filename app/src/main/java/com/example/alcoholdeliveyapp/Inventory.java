@@ -6,9 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import java.util.ArrayList;
 
 public class Inventory extends AppCompatActivity implements View.OnClickListener {
 
@@ -22,27 +20,50 @@ public class Inventory extends AppCompatActivity implements View.OnClickListener
     private Button basic;
     private Button wine;
     private Button whisk;
+    private Button guinMin;
+    private Button heinMin;
+    private Button desMin;
+    private Button fostMin;
+    private Button capMin;
+    private Button smirnMin;
+    private Button basicMin;
+    private Button wineMin;
+    private Button whiskMin;
+
     private Button cart;
 
-    private TextView guinn;
-    private TextView hen;
-    private TextView desper;
-    private TextView foster;
-    private TextView captain;
-    private TextView smir;
-    private TextView whis;
-    private TextView win;
-    private TextView bas;
 
-    private ArrayList guiness;
-    private ArrayList heinekin;
-    private ArrayList desperados;
-    private ArrayList fosters;
-    private ArrayList captainMorgan;
-    private ArrayList smirnoff;
-    private ArrayList whiskey;
-    private ArrayList wines;
-    private ArrayList beer;
+    private TextView guinTv;
+    private TextView heinTv;
+    private TextView desTv;
+    private TextView fosTv;
+    private TextView capTv;
+    private TextView smirnTv;
+    private TextView basTv;
+    private TextView wineTv;
+    private TextView whisTv;
+
+    private TextView guinT;
+    private TextView heinT;
+    private TextView desT;
+    private TextView fosT;
+    private TextView capT;
+    private TextView smirnT;
+    private TextView basT;
+    private TextView wineT;
+    private TextView whisT;
+
+
+    int g_qty = 0;
+    int h_qty = 0;
+    int d_qty = 0;
+    int f_qty = 0;
+    int c_qty = 0;
+    int s_qty = 0;
+    int b_qty = 0;
+    int w_qty = 0;
+    int k_qty = 0;
+
 
 
     @Override
@@ -59,32 +80,57 @@ public class Inventory extends AppCompatActivity implements View.OnClickListener
         basic = findViewById(R.id.basicAdd);
         wine = findViewById(R.id.wineAdd);
         whisk = findViewById(R.id.whiskeyAdd);
+
+        guinMin = findViewById(R.id.guinMinus);
+        heinMin = findViewById(R.id.heinMinus);
+        desMin = findViewById(R.id.desMinus);
+        fostMin = findViewById(R.id.fostMinus);
+        capMin = findViewById(R.id.morganMinus);
+        smirnMin = findViewById(R.id.smirnMinus);
+        basicMin = findViewById(R.id.basicMinus);
+        wineMin = findViewById(R.id.wineMinus);
+        whiskMin = findViewById(R.id.whiskeyMinus);
+
         cart = findViewById(R.id.cartBtn);
 
-
-        guiness = new ArrayList <Integer>(0);
-        heinekin = new ArrayList <Integer>(0);
-        desperados = new ArrayList <Integer>(0);
-        fosters = new ArrayList <Integer>(0);
-        captainMorgan = new ArrayList <Integer>(0);
-        smirnoff = new ArrayList <Integer>(0);
-        whiskey = new ArrayList <Integer>(0);
-        wines = new ArrayList <Integer>(0);
-        beer = new ArrayList <Integer>(0);
+        guinTv = (TextView) findViewById( R.id.guinTv );
+        heinTv = (TextView) findViewById( R.id.heinTv );
+        desTv = (TextView) findViewById( R.id.desTv );
+        fosTv = (TextView) findViewById( R.id.fosTv );
+        capTv = (TextView) findViewById( R.id.capTv );
+        smirnTv = (TextView) findViewById( R.id.smirnTv );
+        basTv = (TextView) findViewById( R.id.basTv );
+        wineTv = (TextView) findViewById( R.id.wineTv );
+        whisTv = (TextView) findViewById( R.id.whisTv );
 
 
         cart.setOnClickListener(this);
 
 
+
+
         guin.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
 
-                guiness.add(+1);
-                int g = (int) guiness.get();
+                g_qty++;
 
-                Intent intent = new Intent(getBaseContext(), Cart.class);
-                intent.putExtra("GUIN_ID", g);
+                String g_qty_txt =Integer.toString( g_qty );
+                guinTv.setText(g_qty_txt );
+
+            }
+        });
+
+        guinMin.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                g_qty--;
+
+                String g_qty_txt =Integer.toString( g_qty );
+                guinTv.setText(g_qty_txt );
 
             }
         });
@@ -92,23 +138,47 @@ public class Inventory extends AppCompatActivity implements View.OnClickListener
         hein.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String h = (String) hen.getText();
 
-                Intent intent = new Intent(getBaseContext(), Cart.class);
-                intent.putExtra("HEN_ID", h);
-                startActivity(intent);
+               h_qty++;
+
+                String h_qty_txt =Integer.toString( h_qty );
+                heinTv.setText(h_qty_txt );
 
             }
         });
 
-        des.setOnClickListener(new View.OnClickListener() {
+        heinMin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String d = (String) desper.getText();
 
-                Intent intent = new Intent(getBaseContext(), Cart.class);
-                intent.putExtra("DES_ID", d);
-                startActivity(intent);
+                h_qty--;
+
+                String h_qty_txt =Integer.toString( h_qty );
+                heinTv.setText(h_qty_txt );
+
+            }
+        });
+
+     des.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                   d_qty++;
+
+                String d_qty_txt =Integer.toString( d_qty );
+                desTv.setText(d_qty_txt );
+
+            }
+        });
+
+        desMin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                d_qty--;
+
+                String d_qty_txt =Integer.toString( d_qty );
+                desTv.setText(d_qty_txt );
 
             }
         });
@@ -116,11 +186,23 @@ public class Inventory extends AppCompatActivity implements View.OnClickListener
         fost.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String f = (String) foster.getText();
 
-                Intent intent = new Intent(getBaseContext(), Cart.class);
-                intent.putExtra("FOS_ID", f);
-                startActivity(intent);
+               f_qty++;
+
+                String f_qty_txt =Integer.toString( f_qty );
+                fosTv.setText(f_qty_txt );
+
+            }
+        });
+
+        fostMin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                f_qty--;
+
+                String f_qty_txt =Integer.toString( f_qty );
+                fosTv.setText(f_qty_txt );
 
             }
         });
@@ -128,11 +210,23 @@ public class Inventory extends AppCompatActivity implements View.OnClickListener
         cap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String c = (String) captain.getText();
 
-                Intent intent = new Intent(getBaseContext(), Cart.class);
-                intent.putExtra("CAP_ID", c);
-                startActivity(intent);
+                  c_qty++;
+
+                String c_qty_txt =Integer.toString( c_qty );
+                capTv.setText(c_qty_txt );
+
+            }
+        });
+
+        capMin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                c_qty--;
+
+                String c_qty_txt =Integer.toString( c_qty );
+                capTv.setText(c_qty_txt );
 
             }
         });
@@ -140,11 +234,23 @@ public class Inventory extends AppCompatActivity implements View.OnClickListener
         smirn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String s = (String) smir.getText();
 
-                Intent intent = new Intent(getBaseContext(), Cart.class);
-                intent.putExtra("SMI_ID", s);
-                startActivity(intent);
+               s_qty++;
+
+                String s_qty_txt =Integer.toString( s_qty );
+                smirnTv.setText(s_qty_txt );
+
+            }
+        });
+
+        smirnMin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                s_qty--;
+
+                String s_qty_txt =Integer.toString( s_qty );
+                smirnTv.setText(s_qty_txt );
 
             }
         });
@@ -152,11 +258,23 @@ public class Inventory extends AppCompatActivity implements View.OnClickListener
         wine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String w = (String) win.getText();
 
-                Intent intent = new Intent(getBaseContext(), Cart.class);
-                intent.putExtra("WIN_ID", w);
-                startActivity(intent);
+                  w_qty++;
+
+                String w_qty_txt =Integer.toString( w_qty );
+                wineTv.setText(w_qty_txt );
+
+            }
+        });
+
+        wineMin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                w_qty--;
+
+                String w_qty_txt =Integer.toString( w_qty );
+                wineTv.setText(w_qty_txt );
 
             }
         });
@@ -164,11 +282,23 @@ public class Inventory extends AppCompatActivity implements View.OnClickListener
         whisk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String k = (String) whis.getText();
 
-                Intent intent = new Intent(getBaseContext(), Cart.class);
-                intent.putExtra("WHIS_ID", k);
-                startActivity(intent);
+                k_qty++;
+
+                String k_qty_txt =Integer.toString( k_qty );
+                whisTv.setText(k_qty_txt );
+
+            }
+        });
+
+        whiskMin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                k_qty--;
+
+                String k_qty_txt =Integer.toString( k_qty );
+                whisTv.setText(k_qty_txt );
 
             }
         });
@@ -176,15 +306,26 @@ public class Inventory extends AppCompatActivity implements View.OnClickListener
         basic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String b = (String) bas.getText();
 
-                Intent intent = new Intent(getBaseContext(), Cart.class);
-                intent.putExtra("BAS_ID", b);
-                startActivity(intent);
+                 b_qty++;
+
+                String b_qty_txt =Integer.toString( b_qty );
+                basTv.setText(b_qty_txt );
 
             }
         });
 
+        basicMin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                b_qty--;
+
+                String b_qty_txt =Integer.toString( b_qty );
+                basTv.setText(b_qty_txt );
+
+            }
+        });
 
     }
 
@@ -194,7 +335,53 @@ public class Inventory extends AppCompatActivity implements View.OnClickListener
         //open login activity when user taps on the already registered Button
         cart.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(Inventory.this, Cart.class));
+
+                String input1 = guinTv.getText().toString();
+                String input2 = heinTv.getText().toString();
+                String input3 = desTv.getText().toString();
+                String input4 = fosTv.getText().toString();
+                String input5 = capTv.getText().toString();
+                String input6 = smirnTv.getText().toString();
+                String input7 = basTv.getText().toString();
+                String input8 = wineTv.getText().toString();
+                String input9 = whisTv.getText().toString();
+
+/*                String input10 = guinT.getText().toString();
+                String input11 = heinT.getText().toString();
+                String input12 = desT.getText().toString();
+                String input13 = fosT.getText().toString();
+                String input14 = capT.getText().toString();
+                String input15 = smirnT.getText().toString();
+                String input16 = basT.getText().toString();
+                String input17 = wineT.getText().toString();
+                String input18 = whisT.getText().toString();
+*/
+
+                Intent i = new Intent (getApplicationContext(), Cart.class);
+
+                i.putExtra("GuinN", (CharSequence) guinTv );
+                i.putExtra("HenN", (CharSequence) heinTv );
+                i.putExtra("DesN", (CharSequence) desTv );
+                i.putExtra("FosN", (CharSequence) fosTv );
+                i.putExtra("CapN", (CharSequence) capTv );
+                i.putExtra("SmirnN", (CharSequence) smirnTv );
+                i.putExtra("BasN", (CharSequence) basTv );
+                i.putExtra("WineN", (CharSequence) wineTv );
+                i.putExtra("WhiskN", (CharSequence) whisTv );
+
+                /*
+                i.putExtra("GuinNa", (CharSequence) guinT );
+                i.putExtra("HenNa", (CharSequence) heinT );
+                i.putExtra("DesNa", (CharSequence) desT );
+                i.putExtra("FosNa", (CharSequence) fosT );
+                i.putExtra("CapNa", (CharSequence) capT );
+                i.putExtra("SmirnNa", (CharSequence) smirnT );
+                i.putExtra("BasNa", (CharSequence) basT );
+                i.putExtra("WineNa", (CharSequence) wineT );
+                i.putExtra("WhiskNa", (CharSequence) whisT );
+                startActivity(i);
+*/
+
             }
         });
     }

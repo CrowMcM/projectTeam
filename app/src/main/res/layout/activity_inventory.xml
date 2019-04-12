@@ -55,17 +55,229 @@
             tools:verticalScrollbarPosition="defaultPosition">
 
             <Button
-                android:id="@+id/whiskeyAdd"
-                android:layout_width="116dp"
-                android:layout_height="70dp"
-                android:layout_marginTop="64dp"
-                android:layout_marginEnd="24dp"
-                android:layout_marginRight="24dp"
+                android:id="@+id/wineMinus"
+                android:layout_width="41dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="112dp"
                 android:background="@drawable/mybutton"
-                android:text="Add"
+                android:text="-"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toEndOf="@+id/wineTv"
+                app:layout_constraintTop_toBottomOf="@+id/basicMinus" />
+
+            <Button
+                android:id="@+id/basicMinus"
+                android:layout_width="41dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="132dp"
+                android:background="@drawable/mybutton"
+                android:text="-"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toEndOf="@+id/basTv"
+                app:layout_constraintTop_toBottomOf="@+id/whiskeyAdd" />
+
+            <Button
+                android:id="@+id/whiskeyMinus"
+                android:layout_width="41dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="104dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/mybutton"
+                android:text="-"
                 android:textColor="@android:color/white"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/smirnTv" />
+                app:layout_constraintTop_toBottomOf="@+id/smirnT" />
+
+            <Button
+                android:id="@+id/smirnMinus"
+                android:layout_width="41dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="88dp"
+                android:background="@drawable/mybutton"
+                android:text="-"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toEndOf="@+id/smirnTv"
+                app:layout_constraintTop_toBottomOf="@+id/morganAdd" />
+
+            <Button
+                android:id="@+id/morganMinus"
+                android:layout_width="41dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="72dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/mybutton"
+                android:text="-"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fosT" />
+
+            <Button
+                android:id="@+id/fostMinus"
+                android:layout_width="41dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="104dp"
+                android:layout_marginEnd="52dp"
+                android:layout_marginRight="52dp"
+                android:background="@drawable/mybutton"
+                android:text="-"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/desAdd" />
+
+            <Button
+                android:id="@+id/desMinus"
+                android:layout_width="41dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="64dp"
+                android:background="@drawable/mybutton"
+                android:text="-"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toEndOf="@+id/desTv"
+                app:layout_constraintTop_toBottomOf="@+id/heinT" />
+
+            <Button
+                android:id="@+id/heinMinus"
+                android:layout_width="41dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="56dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/mybutton"
+                android:text="-"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toTopOf="@+id/desAdd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/guinAdd"
+                app:layout_constraintVertical_bias="0.302" />
+
+            <Button
+                android:id="@+id/guinMinus"
+                android:layout_width="41dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="136dp"
+                android:layout_marginEnd="48dp"
+                android:layout_marginRight="48dp"
+                android:background="@drawable/mybutton"
+                android:text="-"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/wineTv"
+                android:layout_width="36dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="1172dp"
+                android:text="0"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/guinT"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/basTv"
+                android:layout_width="27dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="184dp"
+                android:layout_marginLeft="184dp"
+                android:layout_marginTop="116dp"
+                android:text="0"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/whisT" />
+
+            <TextView
+                android:id="@+id/whisTv"
+                android:layout_width="28dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="116dp"
+                android:text="0"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/whisT"
+                app:layout_constraintTop_toBottomOf="@+id/smirnT" />
+
+            <TextView
+                android:id="@+id/smirnTv"
+                android:layout_width="34dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="64dp"
+                android:text="0"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/smirnT"
+                app:layout_constraintTop_toBottomOf="@+id/capT" />
+
+            <TextView
+                android:id="@+id/capTv"
+                android:layout_width="31dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="612dp"
+                android:text="0"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/guinT"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/fosTv"
+                android:layout_width="31dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="492dp"
+                android:text="0"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/guinT"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/desTv"
+                android:layout_width="31dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="368dp"
+                android:text="0"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/guinT"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/heinTv"
+                android:layout_width="32dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="80dp"
+                android:text="0"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/heinT"
+                app:layout_constraintTop_toBottomOf="@+id/guinT" />
+
+            <Button
+                android:id="@+id/whiskeyAdd"
+                android:layout_width="41dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="108dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/mybutton"
+                android:text="+"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/smirnT" />
 
             <TextView
                 android:id="@+id/textView17"
@@ -79,44 +291,40 @@
                 app:layout_constraintEnd_toStartOf="@+id/guinAdd"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/imageView18"
-                app:layout_constraintTop_toBottomOf="@+id/basTv" />
+                app:layout_constraintTop_toBottomOf="@+id/basT" />
 
             <TextView
-                android:id="@+id/wineTv"
+                android:id="@+id/wineT"
                 android:layout_width="176dp"
                 android:layout_height="44dp"
-                android:layout_marginTop="84dp"
+                android:layout_marginTop="112dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:text="Basic Wine €38"
                 android:textColor="@color/colorAccent"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toStartOf="@+id/guinAdd"
-                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintHorizontal_bias="0.064"
                 app:layout_constraintStart_toEndOf="@+id/imageView18"
-                app:layout_constraintTop_toBottomOf="@+id/basTv" />
+                app:layout_constraintTop_toBottomOf="@+id/basT" />
 
             <TextView
-                android:id="@+id/whisTv"
+                android:id="@+id/whisT"
                 android:layout_width="176dp"
                 android:layout_height="71dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="72dp"
+                android:layout_marginTop="88dp"
                 android:text="Basic Whiskey €30"
                 android:textColor="@color/colorAccent"
                 android:textSize="24sp"
                 app:layout_constraintStart_toEndOf="@+id/imageView19"
-                app:layout_constraintTop_toBottomOf="@+id/smirnTv" />
+                app:layout_constraintTop_toBottomOf="@+id/smirnT" />
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="76dp"
                 android:layout_height="70dp"
-                android:layout_marginStart="4dp"
-                android:layout_marginLeft="4dp"
-                android:layout_marginBottom="68dp"
-                app:layout_constraintBottom_toTopOf="@+id/wineTv"
+                android:layout_marginBottom="96dp"
+                app:layout_constraintBottom_toTopOf="@+id/wineT"
                 app:layout_constraintStart_toStartOf="parent"
                 app:srcCompat="@drawable/icon" />
 
@@ -131,99 +339,92 @@
 
             <Button
                 android:id="@+id/SmirnAdd"
-                android:layout_width="116dp"
-                android:layout_height="70dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="48dp"
-                android:layout_marginEnd="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_width="41dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="52dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginTop="88dp"
                 android:background="@drawable/mybutton"
-                android:text="Add"
+                android:text="+"
                 android:textColor="@android:color/white"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/smirnTv"
-                app:layout_constraintTop_toBottomOf="@+id/capTv" />
+                app:layout_constraintTop_toBottomOf="@+id/morganAdd" />
 
             <Button
                 android:id="@+id/morganAdd"
-                android:layout_width="116dp"
-                android:layout_height="70dp"
-                android:layout_marginTop="52dp"
-                android:layout_marginEnd="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_width="41dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="68dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
                 android:background="@drawable/mybutton"
-                android:text="Add"
+                android:text="+"
                 android:textColor="@android:color/white"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/fosTv" />
+                app:layout_constraintTop_toBottomOf="@+id/fosT" />
 
             <Button
                 android:id="@+id/wineAdd"
-                android:layout_width="116dp"
-                android:layout_height="70dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="52dp"
-                android:layout_marginEnd="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_width="41dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="44dp"
+                android:layout_marginLeft="44dp"
+                android:layout_marginTop="116dp"
                 android:background="@drawable/mybutton"
-                android:text="Add"
+                android:text="+"
                 android:textColor="@android:color/white"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.375"
                 app:layout_constraintStart_toEndOf="@+id/wineTv"
-                app:layout_constraintTop_toBottomOf="@+id/basicAdd" />
+                app:layout_constraintTop_toBottomOf="@+id/basicMinus" />
 
             <TextView
-                android:id="@+id/basTv"
+                android:id="@+id/basT"
                 android:layout_width="179dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
-                android:layout_marginTop="68dp"
+                android:layout_marginTop="108dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:text="Basic Beer €3.50"
                 android:textColor="@color/colorAccent"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toStartOf="@+id/basicAdd"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/imageView2"
-                app:layout_constraintTop_toBottomOf="@+id/whisTv" />
+                app:layout_constraintTop_toBottomOf="@+id/whisT" />
 
             <TextView
-                android:id="@+id/smirnTv"
+                android:id="@+id/smirnT"
                 android:layout_width="176dp"
                 android:layout_height="40dp"
-                android:layout_marginTop="712dp"
+                android:layout_marginTop="708dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:text="Smirnoff €22"
                 android:textColor="@color/colorAccent"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toStartOf="@+id/guinAdd"
-                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintHorizontal_bias="0.032"
                 app:layout_constraintStart_toEndOf="@+id/imageView18"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/capTv"
+                android:id="@+id/capT"
                 android:layout_width="176dp"
                 android:layout_height="59dp"
-                android:layout_marginTop="588dp"
+                android:layout_marginTop="592dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:text="Captain Morgans €20"
                 android:textColor="@color/colorAccent"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toStartOf="@+id/guinAdd"
-                app:layout_constraintHorizontal_bias="0.875"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/imageView18"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/fosTv"
+                android:id="@+id/fosT"
                 android:layout_width="176dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="488dp"
@@ -238,7 +439,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/desTv"
+                android:id="@+id/desT"
                 android:layout_width="176dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="368dp"
@@ -248,7 +449,7 @@
                 android:textColor="@color/colorAccent"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toStartOf="@+id/guinAdd"
-                app:layout_constraintHorizontal_bias="0.875"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/imageView18"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -256,8 +457,8 @@
                 android:id="@+id/imageView19"
                 android:layout_width="76dp"
                 android:layout_height="70dp"
-                android:layout_marginBottom="56dp"
-                app:layout_constraintBottom_toTopOf="@+id/basTv"
+                android:layout_marginBottom="112dp"
+                app:layout_constraintBottom_toTopOf="@+id/basT"
                 app:layout_constraintStart_toStartOf="parent"
                 app:srcCompat="@drawable/icon" />
 
@@ -266,7 +467,7 @@
                 android:layout_width="76dp"
                 android:layout_height="70dp"
                 android:layout_marginBottom="68dp"
-                app:layout_constraintBottom_toTopOf="@+id/fosTv"
+                app:layout_constraintBottom_toTopOf="@+id/fosT"
                 app:layout_constraintStart_toStartOf="parent"
                 app:srcCompat="@drawable/icon" />
 
@@ -283,7 +484,7 @@
                 android:id="@+id/imageView23"
                 android:layout_width="76dp"
                 android:layout_height="70dp"
-                android:layout_marginTop="64dp"
+                android:layout_marginTop="80dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView2"
                 app:srcCompat="@drawable/icon" />
@@ -301,62 +502,58 @@
 
             <Button
                 android:id="@+id/basicAdd"
-                android:layout_width="116dp"
-                android:layout_height="70dp"
-                android:layout_marginTop="60dp"
-                android:layout_marginEnd="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_width="41dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="56dp"
+                android:layout_marginLeft="56dp"
+                android:layout_marginTop="128dp"
                 android:background="@drawable/mybutton"
-                android:text="Add"
+                android:text="+"
                 android:textColor="@android:color/white"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/whisTv" />
+                app:layout_constraintStart_toEndOf="@+id/basTv"
+                app:layout_constraintTop_toBottomOf="@+id/whiskeyAdd" />
 
             <Button
                 android:id="@+id/fostAdd"
-                android:layout_width="116dp"
-                android:layout_height="70dp"
-                android:layout_marginTop="52dp"
-                android:layout_marginEnd="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_width="41dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="108dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
                 android:background="@drawable/mybutton"
-                android:text="Add"
+                android:text="+"
                 android:textColor="@android:color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/desAdd" />
 
             <Button
                 android:id="@+id/desAdd"
-                android:layout_width="116dp"
-                android:layout_height="70dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
+                android:layout_width="41dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="52dp"
+                android:layout_marginLeft="52dp"
                 android:layout_marginTop="64dp"
-                android:layout_marginEnd="24dp"
-                android:layout_marginRight="24dp"
                 android:background="@drawable/mybutton"
-                android:text="Add"
+                android:text="+"
                 android:textColor="@android:color/white"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/desTv"
-                app:layout_constraintTop_toBottomOf="@+id/heinTv" />
+                app:layout_constraintTop_toBottomOf="@+id/heinT" />
 
             <Button
                 android:id="@+id/heinAdd"
-                android:layout_width="116dp"
-                android:layout_height="70dp"
+                android:layout_width="41dp"
+                android:layout_height="35dp"
                 android:layout_marginTop="56dp"
-                android:layout_marginEnd="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
                 android:layout_marginBottom="8dp"
                 android:background="@drawable/mybutton"
-                android:text="Add"
+                android:text="+"
                 android:textColor="@android:color/white"
                 app:layout_constraintBottom_toTopOf="@+id/desAdd"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/guinAdd"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintVertical_bias="0.307" />
 
             <ImageView
                 android:id="@+id/imageView18"
@@ -368,25 +565,23 @@
                 app:srcCompat="@drawable/icon" />
 
             <TextView
-                android:id="@+id/guinTv"
+                android:id="@+id/guinT"
                 android:layout_width="176dp"
                 android:layout_height="40dp"
-                android:layout_marginTop="124dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
+                android:layout_marginTop="136dp"
+                android:layout_marginEnd="88dp"
+                android:layout_marginRight="88dp"
                 android:text="Guiness €5"
                 android:textColor="@color/colorAccent"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toStartOf="@+id/guinAdd"
-                app:layout_constraintHorizontal_bias="0.875"
-                app:layout_constraintStart_toEndOf="@+id/imageView18"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/heinTv"
+                android:id="@+id/heinT"
                 android:layout_width="176dp"
                 android:layout_height="40dp"
-                android:layout_marginTop="244dp"
+                android:layout_marginTop="252dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:text="Heineken €6"
@@ -399,13 +594,13 @@
 
             <Button
                 android:id="@+id/guinAdd"
-                android:layout_width="116dp"
-                android:layout_height="70dp"
-                android:layout_marginTop="108dp"
-                android:layout_marginEnd="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_width="41dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="136dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
                 android:background="@drawable/mybutton"
-                android:text="Add"
+                android:text="+"
                 android:textColor="@android:color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -418,6 +613,18 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView22"
                 app:srcCompat="@drawable/icon" />
+
+            <TextView
+                android:id="@+id/guinTv"
+                android:layout_width="33dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="140dp"
+                android:text="0"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/guinT"
+                app:layout_constraintTop_toTopOf="parent" />
 
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
