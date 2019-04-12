@@ -346,7 +346,7 @@ public class Inventory extends AppCompatActivity implements View.OnClickListener
                 String input8 = wineTv.getText().toString();
                 String input9 = whisTv.getText().toString();
 
-/*                String input10 = guinT.getText().toString();
+/*              String input10 = guinT.getText().toString();
                 String input11 = heinT.getText().toString();
                 String input12 = desT.getText().toString();
                 String input13 = fosT.getText().toString();
