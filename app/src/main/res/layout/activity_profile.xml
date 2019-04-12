@@ -88,7 +88,7 @@
                 android:contentDescription="Vendor Generic Template"
                 app:layout_constraintBottom_toTopOf="@+id/beverageBTN2"
                 app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/Storefront" />
+                app:srcCompat="@drawable/storefront" />
 
             <ImageView
                 android:id="@+id/BevTem2"
@@ -102,7 +102,7 @@
                 app:layout_constraintBottom_toTopOf="@+id/beverageBTN3"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/beverageBTN2"
-                app:srcCompat="@drawable/Storefront" />
+                app:srcCompat="@drawable/storefront" />
 
         </android.support.constraint.ConstraintLayout>
     </ScrollView>

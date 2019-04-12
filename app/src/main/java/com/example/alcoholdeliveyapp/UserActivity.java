@@ -43,6 +43,8 @@ public class UserActivity extends AppCompatActivity {
     EditText name, email, phone;
     Button save;
     Button buttonGet;
+    Button buttonDelete;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +56,7 @@ public class UserActivity extends AppCompatActivity {
         message = findViewById(R.id.displayMessage);
         save    = findViewById(R.id.save);
         buttonGet = findViewById(R.id.buttonGet);
+        buttonDelete = findViewById(R.id.buttonDelete);
 
         //Fetches saved information when buttonGet is pressed
         buttonGet.setOnClickListener(new View.OnClickListener(){
@@ -71,7 +74,13 @@ public class UserActivity extends AppCompatActivity {
             }
         });
 
-
+        //Method for deleteting contact inititated when delete details button is pressed
+        buttonDelete.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                DeleteData();
+            }
+        });
 
     }
 
