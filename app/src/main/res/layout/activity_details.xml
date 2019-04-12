@@ -30,21 +30,24 @@
 
     <EditText
         android:id="@+id/name"
-        android:layout_width="match_parent"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:hint="Name"
         android:textColor="#FFFFFF" />
     <EditText
         android:id="@+id/email"
-        android:layout_width="match_parent"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:textColor="#FFFFFF"
         android:hint="Email"/>
     <EditText
         android:id="@+id/phone"
         android:textColor="#FFFFFF"
-        android:layout_width="match_parent"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:hint="Phone"/>
 
     <Button
@@ -71,7 +74,7 @@
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="70dp"
         android:background="@drawable/mybutton"
         android:text="CURRENT DETAILS" />
 
