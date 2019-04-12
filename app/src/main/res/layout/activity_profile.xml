@@ -80,26 +80,28 @@
 
             <ImageView
                 android:id="@+id/BevTem1"
-                android:layout_width="239dp"
-                android:layout_height="190dp"
+                android:layout_width="235dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginStart="64dp"
                 android:layout_marginBottom="8dp"
-                android:contentDescription="gen template"
-                android:layout_gravity="center_horizontal"
+                android:contentDescription="Vendor Generic Template"
                 app:layout_constraintBottom_toTopOf="@+id/beverageBTN2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:srcCompat="@drawable/Storefront" />
 
             <ImageView
                 android:id="@+id/BevTem2"
-                android:layout_width="239dp"
-                android:layout_height="190dp"
-                android:layout_marginStart="64dp"
-                android:layout_marginBottom="8dp"
-                android:contentDescription="gen template"
+                android:layout_width="235dp"
+                android:layout_height="180dp"
                 android:layout_gravity="center"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="generic vendor template no2"
                 app:layout_constraintBottom_toTopOf="@+id/beverageBTN3"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/beverageBTN2"
                 app:srcCompat="@drawable/Storefront" />
 
         </android.support.constraint.ConstraintLayout>
