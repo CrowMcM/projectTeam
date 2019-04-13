@@ -11,6 +11,7 @@ import android.widget.TextView;
 public class Inventory extends AppCompatActivity implements View.OnClickListener {
 
 
+
     private Button guin;
     private Button hein;
     private Button des;
@@ -107,8 +108,6 @@ public class Inventory extends AppCompatActivity implements View.OnClickListener
         cart.setOnClickListener(this);
 
 
-
-
         guin.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -118,6 +117,7 @@ public class Inventory extends AppCompatActivity implements View.OnClickListener
 
                 String g_qty_txt =Integer.toString( g_qty );
                 guinTv.setText(g_qty_txt );
+
 
             }
         });
@@ -346,41 +346,20 @@ public class Inventory extends AppCompatActivity implements View.OnClickListener
                 String input8 = wineTv.getText().toString();
                 String input9 = whisTv.getText().toString();
 
-/*              String input10 = guinT.getText().toString();
-                String input11 = heinT.getText().toString();
-                String input12 = desT.getText().toString();
-                String input13 = fosT.getText().toString();
-                String input14 = capT.getText().toString();
-                String input15 = smirnT.getText().toString();
-                String input16 = basT.getText().toString();
-                String input17 = wineT.getText().toString();
-                String input18 = whisT.getText().toString();
-*/
 
                 Intent i = new Intent (getApplicationContext(), Cart.class);
 
-                i.putExtra("GuinN", (CharSequence) guinTv );
-                i.putExtra("HenN", (CharSequence) heinTv );
-                i.putExtra("DesN", (CharSequence) desTv );
-                i.putExtra("FosN", (CharSequence) fosTv );
-                i.putExtra("CapN", (CharSequence) capTv );
-                i.putExtra("SmirnN", (CharSequence) smirnTv );
-                i.putExtra("BasN", (CharSequence) basTv );
-                i.putExtra("WineN", (CharSequence) wineTv );
-                i.putExtra("WhiskN", (CharSequence) whisTv );
+                i.putExtra("GuinN", g_qty);
+                i.putExtra("HenN", h_qty);
+                i.putExtra("DesN", d_qty);
+                i.putExtra("FosN", f_qty);
+                i.putExtra("CapN", c_qty);
+                i.putExtra("SmirnN", s_qty);
+                i.putExtra("BasN", b_qty);
+                i.putExtra("WineN", w_qty);
+                i.putExtra("WhiskN", k_qty);
 
-                /*
-                i.putExtra("GuinNa", (CharSequence) guinT );
-                i.putExtra("HenNa", (CharSequence) heinT );
-                i.putExtra("DesNa", (CharSequence) desT );
-                i.putExtra("FosNa", (CharSequence) fosT );
-                i.putExtra("CapNa", (CharSequence) capT );
-                i.putExtra("SmirnNa", (CharSequence) smirnT );
-                i.putExtra("BasNa", (CharSequence) basT );
-                i.putExtra("WineNa", (CharSequence) wineT );
-                i.putExtra("WhiskNa", (CharSequence) whisT );
                 startActivity(i);
-*/
 
             }
         });

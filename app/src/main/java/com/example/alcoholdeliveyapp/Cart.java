@@ -1,6 +1,5 @@
 package com.example.alcoholdeliveyapp;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -31,34 +30,33 @@ public class Cart extends AppCompatActivity implements View.OnClickListener {
         displayTv = (TextView) findViewById(R.id.displayTv);
 
 
-        Intent intent = getIntent();
-        String guinTv = intent.getExtras().getString("GuinN");
+        String g = getIntent().getStringExtra("GuinN");
+        displayTv.setText("guiness " +g+"\n");
 
+        String h = getIntent().getStringExtra("HenN");
+        displayTv.append("heinekin " +h+"\n");
 
-    /*      int heinekin = getIntent().getIntExtra("HEN_ID", 0);
-        displayTv.setText(heinekin);
+        String d = getIntent().getStringExtra("DesN");
+        displayTv.append("Desperados " +d+"\n");
 
-      String d = getIntent().getStringExtra("DES_ID");
-        displayTv.append(d);
+        String f = getIntent().getStringExtra("FosN");
+        displayTv.append("Fosters " +f+"\n");
 
-        String f = getIntent().getStringExtra("FOS_ID");
-        displayTv.append(f);
+        String c = getIntent().getStringExtra("CapN");
+        displayTv.append("Captain Morgan's " +c+"\n");
 
-        String c = getIntent().getStringExtra("CAP_ID");
-        displayTv.append(c);
+        String s = getIntent().getStringExtra("SmirnN");
+        displayTv.append("Smirnoff " +s+"\n");
 
-        String s = getIntent().getStringExtra("SMI_ID");
-        displayTv.append("" + s);
+        String b = getIntent().getStringExtra("BasN");
+        displayTv.append("Beer " +b+"\n");
 
-        String w = getIntent().getStringExtra("WIN_ID");
-        displayTv.append(w);
+        String w = getIntent().getStringExtra("WineN");
+        displayTv.append("Wine " +w+"\n");
 
-        String k = getIntent().getStringExtra("WHIS_ID");
-        displayTv.append(k);
+        String k = getIntent().getStringExtra("WhiskN");
+        displayTv.append("Whiskey " +k+"\n");
 
-        String b = getIntent().getStringExtra("BAS_ID");
-        displayTv.append(b);
-*/
     }
 
 
