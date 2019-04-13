@@ -11,8 +11,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="78dp">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="87dp">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -22,11 +22,14 @@
                 android:id="@+id/beverageBTN"
                 android:layout_width="235dp"
                 android:layout_height="56dp"
-                android:layout_marginStart="65dp"
-                android:layout_marginLeft="65dp"
-                android:layout_marginTop="184dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="170dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
                 android:background="@drawable/mybutton"
                 android:text="BEVERAGES"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/beverageBTN3" />
 
@@ -34,11 +37,14 @@
                 android:id="@+id/beverageBTN1"
                 android:layout_width="235dp"
                 android:layout_height="56dp"
-                android:layout_marginStart="65dp"
-                android:layout_marginLeft="65dp"
-                android:layout_marginTop="184dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="170dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
                 android:background="@drawable/mybutton"
                 android:text="BEVERAGES"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/beverageBTN" />
 
@@ -46,23 +52,29 @@
                 android:id="@+id/beverageBTN2"
                 android:layout_width="235dp"
                 android:layout_height="56dp"
-                android:layout_marginStart="65dp"
-                android:layout_marginLeft="65dp"
-                android:layout_marginTop="280dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
                 android:background="@drawable/mybutton"
                 android:text="BEVERAGES"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/venGen1" />
 
             <Button
                 android:id="@+id/beverageBTN3"
                 android:layout_width="235dp"
                 android:layout_height="56dp"
-                android:layout_marginStart="65dp"
-                android:layout_marginLeft="65dp"
-                android:layout_marginTop="184dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="170dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
                 android:background="@drawable/mybutton"
                 android:text="BEVERAGES"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/beverageBTN2" />
 
@@ -70,56 +82,112 @@
                 android:id="@+id/buttonLogout"
                 android:layout_width="123dp"
                 android:layout_height="48dp"
-                android:layout_marginStart="116dp"
-                android:layout_marginLeft="116dp"
-                android:layout_marginTop="1160dp"
+                android:layout_marginStart="144dp"
+                android:layout_marginLeft="144dp"
+                android:layout_marginTop="1140dp"
                 android:background="@drawable/mybutton"
                 android:text="Logout"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/offlic1"
-                android:layout_width="wrap_content"
-                android:layout_height="200dp"
-                android:layout_marginStart="64dp"
-                android:layout_marginLeft="64dp"
-                android:layout_marginBottom="8dp"
-                app:layout_constraintBottom_toTopOf="@+id/beverageBTN2"
+                android:id="@+id/appLogo"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:contentDescription="Logo of the App"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/offlicence" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logoapp" />
+
+            <TextView
+                android:id="@+id/beverageBeeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Beverage Bee Ltd"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appLogo" />
 
             <ImageView
-                android:id="@+id/offli2"
+                android:id="@+id/venGen1"
                 android:layout_width="235dp"
-                android:layout_height="183dp"
-                android:layout_marginStart="64dp"
-                android:layout_marginLeft="64dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/beverageBeeText"
+                app:srcCompat="@drawable/storefront" />
+
+            <ImageView
+                android:id="@+id/venGen2"
+                android:layout_width="235dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="generic vendor 2"
+                app:layout_constraintBottom_toTopOf="@+id/beverageBTN3"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/beverageBTN2"
-                app:srcCompat="@drawable/licence" />
+                app:srcCompat="@drawable/storefront" />
 
             <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="232dp"
-                android:layout_height="139dp"
-                android:layout_marginStart="68dp"
-                android:layout_marginLeft="68dp"
+                android:id="@+id/venGen3"
+                android:layout_width="235dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="generic vendor 3"
+                app:layout_constraintBottom_toTopOf="@+id/beverageBTN"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/beverageBTN3"
-                app:srcCompat="@drawable/ol" />
+                app:srcCompat="@drawable/storefront" />
 
             <ImageView
-                android:id="@+id/imageView13"
-                android:layout_width="271dp"
-                android:layout_height="173dp"
-                android:layout_marginStart="52dp"
-                android:layout_marginLeft="52dp"
+                android:id="@+id/venGen4"
+                android:layout_width="235dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="generic vendor 4"
+                app:layout_constraintBottom_toTopOf="@+id/beverageBTN1"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/beverageBTN"
-                app:srcCompat="@drawable/off" />
+                app:srcCompat="@drawable/storefront" />
 
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
