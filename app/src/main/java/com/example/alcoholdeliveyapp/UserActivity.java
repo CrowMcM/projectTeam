@@ -31,17 +31,21 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class UserActivity extends AppCompatActivity {
-    //Defines the keys from the Cloud Firestore.
 
+    //Defines the keys from the Cloud Firestore.
     private static final String NAME_KEY = "Name";
     private static final String EMAIL_KEY = "Email";
     private static final String PHONE_KEY = "Phone";
+
+    //Initiating variables
     FirebaseFirestore db;
     TextView textDisplay;
     TextView message;
     EditText name, email, phone;
     Button save;
     Button buttonGet;
+    Button buttonDelete;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,6 +57,7 @@ public class UserActivity extends AppCompatActivity {
         message = findViewById(R.id.displayMessage);
         save    = findViewById(R.id.save);
         buttonGet = findViewById(R.id.buttonGet);
+        buttonDelete = findViewById(R.id.buttonDelete);
 
         //Fetches saved information when buttonGet is pressed
         buttonGet.setOnClickListener(new View.OnClickListener(){
@@ -62,7 +67,7 @@ public class UserActivity extends AppCompatActivity {
             }
         });
 
-        //Method for adding contact initiated when Save button is pressed
+        //Method for adding user details initiated when Save button is pressed
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -70,8 +75,13 @@ public class UserActivity extends AppCompatActivity {
             }
         });
 
-
-
+        //Method for deleing user details when delete button is pressed
+        buttonDelete.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                DeleteData();
+            }
+        });
     }
 
     //Keeps updates from the Firebase
@@ -90,6 +100,7 @@ public class UserActivity extends AppCompatActivity {
             }
         });
     }
+    //Method for deleting the user details entered.
     private void DeleteData() {
 
         db.collection("PhoneBook").document("Contacts")

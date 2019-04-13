@@ -68,11 +68,20 @@
 
     <Button
         android:id="@+id/buttonGet"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="75dp"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/mybutton"
         android:text="CURRENT DETAILS" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_marginTop="10dp"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/mybutton"
+        android:text="DELETE" />
 
 </LinearLayout>
