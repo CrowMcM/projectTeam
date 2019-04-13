@@ -1,15 +1,22 @@
 package com.example.alcoholdeliveyapp;
 
-/*    Completed by Nathan Hodgkiss
+/*
+       Social Media Icon Code Reference:
+       https://stackoverflow.com/questions/3536165/how-can-imageview-link-to-web-page
+
+
+      Completed by Nathan Hodgkiss
       Student Number: x17381176
 */
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -20,6 +27,7 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
     Button btnLogout, viewBeverageBtn, buttonUser;
     private TextView textViewUserEmail;
     EditText etName, etAge, etUserName;
+    ImageView imgF, imgT;
 
 
     //firebase auth object
@@ -52,6 +60,9 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         btnLogout = (Button) findViewById(R.id.btnLogout);
         viewBeverageBtn = (Button) findViewById(R.id.viewBeveragesBtn);
         buttonUser = (Button) findViewById(R.id.buttonUser);
+        ImageView imgF = (ImageView)findViewById(R.id.imageView10);
+        ImageView imgT = (ImageView)findViewById(R.id.imageView11);
+        ImageView imgI = (ImageView)findViewById(R.id.imageView12);
 
         //Displays currently logged in user
         textViewUserEmail.setText("Welcome "+user.getEmail());
@@ -60,6 +71,39 @@ public class SecondActivity extends AppCompatActivity implements View.OnClickLis
         viewBeverageBtn.setOnClickListener(this);
         buttonUser.setOnClickListener(this);
 
+
+        //Facebook icon re-directs to facebook homepage.
+        imgF.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("http://facebook.com"));
+                startActivity(intent);
+            }
+        });
+
+        //Twitter icon re-directs to twitter homepage.
+        imgT.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("http://twitter.com"));
+                startActivity(intent);
+            }
+        });
+
+        //Instagram icon re-directs to instagram homepage
+        imgI.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent.setData(Uri.parse("http://instagram.com"));
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

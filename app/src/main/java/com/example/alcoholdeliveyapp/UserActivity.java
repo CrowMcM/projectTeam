@@ -1,10 +1,11 @@
 package com.example.alcoholdeliveyapp;
 
-//    Based of tutorial from here:
-//    https://android.jlelse.eu/build-a-phonebook-with-cloud-firestore-in-10-minutes-59c65e7af4ad
+/*
+          Based of tutorial from here:
+          https://android.jlelse.eu/build-a-phonebook-with-cloud-firestore-in-10-minutes-59c65e7af4ad
 
-/*    Completed by Nathan Hodgkiss
-      Student Number: x17381176
+         Completed by Nathan Hodgkiss
+         Student Number: x17381176
 */
 
 import android.os.Bundle;
@@ -100,6 +101,7 @@ public class UserActivity extends AppCompatActivity {
             }
         });
     }
+
     //Method for deleting the user details entered.
     private void DeleteData() {
 
@@ -114,6 +116,8 @@ public class UserActivity extends AppCompatActivity {
             }
         });
     }
+
+    /*
     private void UpdateData() {
 
         DocumentReference contact = db.collection("PhoneBook").document("Contacts");
@@ -129,6 +133,7 @@ public class UserActivity extends AppCompatActivity {
                 });
 
     }
+    */
 
     //Method that reads the details from the Firebase
     private void ReadSingleContact() {

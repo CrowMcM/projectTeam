@@ -1,9 +1,10 @@
 package com.example.alcoholdeliveyapp;
 
-//Based of tutorial from here:
-//https://www.simplifiedcoding.net/firebase-user-authentication-tutorial/
+/*
+      Based of tutorial from here:
+      https://www.simplifiedcoding.net/firebase-user-authentication-tutorial/
 
-/*    Completed by Nathan Hodgkiss
+      Completed by Nathan Hodgkiss
       Student Number: x17381176
 */
 
@@ -80,7 +81,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         });
     }
 
-    //method for user login
+    //Method for user login
     private void userLogin(){
         String email = editTextEmail.getText().toString().trim();
         String password  = editTextPassword.getText().toString().trim();
@@ -100,7 +101,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         //if the email and password are not empty
         //displaying a progress dialog
 
-        progressDialog.setMessage("Logging In Please Wait...");
+        progressDialog.setMessage("Logging In - Please Wait...");
         progressDialog.show();
 
         //logging in the user
