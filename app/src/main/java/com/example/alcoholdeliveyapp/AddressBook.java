@@ -1,11 +1,13 @@
 package com.example.alcoholdeliveyapp;
 
-//    Based of tutorial from here:
-//    https://android.jlelse.eu/build-a-phonebook-with-cloud-firestore-in-10-minutes-59c65e7af4ad
+/*
+          Based of tutorial from here:
+          https://android.jlelse.eu/build-a-phonebook-with-cloud-firestore-in-10-minutes-59c65e7af4ad
 
 
-/*    Completed by Nathan Hodgkiss
-      Student Number: x17381176
+         Completed by Nathan Hodgkiss
+         Student Number: x17381176
+
 */
 
 public class AddressBook {

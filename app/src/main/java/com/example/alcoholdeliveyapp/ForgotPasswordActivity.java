@@ -1,10 +1,12 @@
 package com.example.alcoholdeliveyapp;
 
-//Based of tutorial from here:
-// https://www.youtube.com/watch?v=t8vUdt1eEzE
+/*
+      Based of tutorial from here:
+      https://www.youtube.com/watch?v=t8vUdt1eEzE
 
-/*    Completed by Nathan Hodgkiss
+      Completed by Nathan Hodgkiss
       Student Number: x17381176
+
 */
 
 import android.os.Bundle;

@@ -27,26 +27,29 @@
 
         <EditText
             android:id="@+id/editTextEmail"
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:hint="Enter email"
+            android:layout_gravity="center_horizontal"
             android:inputType="textEmailAddress" />
 
         <EditText
             android:id="@+id/editTextPassword"
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:hint="Enter password"
+            android:layout_gravity="center_horizontal"
             android:inputType="textPassword" />
 
         <Button
             android:id="@+id/buttonSignin"
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:background="@drawable/mybutton"
+            android:layout_gravity="center_horizontal"
             android:text="LOGIN" />
 
         <TextView

@@ -1,9 +1,10 @@
 package com.example.alcoholdeliveyapp;
 
-//Based of tutorial from here:
-//https://www.simplifiedcoding.net/android-firebase-tutorial-1/
+/*
+      Based of tutorial from here:
+      https://www.simplifiedcoding.net/android-firebase-tutorial-1/
 
-/*    Completed by Nathan Hodgkiss
+      Completed by Nathan Hodgkiss
       Student Number: x17381176
 */
 
@@ -99,7 +100,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //if the email and password are not empty
         //displaying a progress dialog
 
-        progressDialog.setMessage("Registering Please Wait...");
+        progressDialog.setMessage("Registering - Please Wait...");
         progressDialog.show();
 
         //creating a new user
@@ -110,7 +111,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         //checking if success
                         if(task.isSuccessful()){
                             finish();
-                            startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
+                            startActivity(new Intent(getApplicationContext(), SecondActivity.class));
                         }else{
                             //display some message here
                             Toast.makeText(MainActivity.this,"Registration Error",Toast.LENGTH_LONG).show();
