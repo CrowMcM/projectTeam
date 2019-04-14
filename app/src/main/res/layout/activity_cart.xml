@@ -56,19 +56,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/etTotal"
-        android:layout_width="134dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginLeft="56dp"
-        android:layout_marginTop="32dp"
-        android:ems="10"
-        android:inputType="number"
-        android:textColor="@color/colorAccent"
-        app:layout_constraintStart_toEndOf="@+id/textView13"
-        app:layout_constraintTop_toBottomOf="@+id/displayTv" />
-
-    <EditText
         android:id="@+id/cnTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -116,5 +103,15 @@
         android:textColor="@color/colorAccent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cnTxt" />
+
+    <TextView
+        android:id="@+id/eTotal"
+        android:layout_width="150dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/displayTv" />
 
 </android.support.constraint.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.example.alcoholdeliveyapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,7 +16,7 @@ public class Cart extends AppCompatActivity implements View.OnClickListener {
     private TextView cnTxt;
     private TextView cvcTxt;
     private TextView dateTxt;
-    private TextView etTotal;
+    private TextView eTotal;
     private TextView displayTv;
 
     @Override
@@ -28,34 +29,39 @@ public class Cart extends AppCompatActivity implements View.OnClickListener {
         payBtn.setOnClickListener(this);
 
         displayTv = (TextView) findViewById(R.id.displayTv);
+        eTotal = (TextView) findViewById(R.id.eTotal);
 
 
-        String g = getIntent().getStringExtra("GuinN");
-        displayTv.setText("guiness " +g+"\n");
+        Intent i = getIntent();
+        int sum = i.getIntExtra("total", 0);
+        eTotal.setText(String.valueOf(sum));
 
-        String h = getIntent().getStringExtra("HenN");
-        displayTv.append("heinekin " +h+"\n");
+        int g = i.getIntExtra("GuinN", 0);
+        displayTv.append ("Guinness " + String.valueOf(g) + "\n");
 
-        String d = getIntent().getStringExtra("DesN");
-        displayTv.append("Desperados " +d+"\n");
+        int h = i.getIntExtra("HenN", 0);
+        displayTv.append("Heineken " + String.valueOf(h) + "\n");
 
-        String f = getIntent().getStringExtra("FosN");
-        displayTv.append("Fosters " +f+"\n");
+        int d = i.getIntExtra("DesN", 0);
+        displayTv.append ("Desperado " + String.valueOf(d) + "\n");
 
-        String c = getIntent().getStringExtra("CapN");
-        displayTv.append("Captain Morgan's " +c+"\n");
+        int f = i.getIntExtra("FosN", 0);
+        displayTv.append("Fosters " + String.valueOf(f) + "\n");
 
-        String s = getIntent().getStringExtra("SmirnN");
-        displayTv.append("Smirnoff " +s+"\n");
+        int c = i.getIntExtra("CapN", 0);
+        displayTv.append ("Captain Morgan " + String.valueOf(c) + "\n");
 
-        String b = getIntent().getStringExtra("BasN");
-        displayTv.append("Beer " +b+"\n");
+        int s = i.getIntExtra("SmirnN", 0);
+        displayTv.append("Smirnoff " + String.valueOf(s) + "\n");
 
-        String w = getIntent().getStringExtra("WineN");
-        displayTv.append("Wine " +w+"\n");
+        int b = i.getIntExtra("BasN", 0);
+        displayTv.append("Beer " + String.valueOf(b) + "\n");
 
-        String k = getIntent().getStringExtra("WhiskN");
-        displayTv.append("Whiskey " +k+"\n");
+        int w = i.getIntExtra("WineN", 0);
+        displayTv.append ("Wine " + String.valueOf(w) + "\n");
+
+        int k = i.getIntExtra("WhiskN", 0);
+        displayTv.append("Whiskey " + String.valueOf(k) + "\n");
 
     }
 
@@ -65,7 +71,7 @@ public class Cart extends AppCompatActivity implements View.OnClickListener {
         switch (v.getId()) {
             case R.id.payBtn:
 
-                Toast.makeText(this, "Accepted. Your order is on th way.", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Accepted. Your order is on the way.", Toast.LENGTH_LONG).show();
                 return;
         }
     }
